@@ -1,10 +1,10 @@
-dnl $Id: config.m4 4190 2006-08-01 16:38:47Z j $
+dnl $Id$
 dnl config.m4 for extension francotone
 
 PHP_ARG_ENABLE(francotone, whether to enable francotone support,
 [  --enable-francotone     Enable francotone support])
 
-AC_CHECK_FUNCS(strlcpy strlcat)
+AC_CHECK_FUNCS(strlcpy)
 
 for i in /usr/local /usr; do
   if test -f "$i/include/pcre.h"; then

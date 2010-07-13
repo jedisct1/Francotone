@@ -1,4 +1,4 @@
-/* $Id: francotone-php.c 4192 2006-08-01 17:08:15Z j $ */
+/* $Id$ */
 #ifdef HAVE_CONFIG_H
 # include <config.h>
 #endif
@@ -54,7 +54,7 @@ PHP_MINFO_FUNCTION(francotone)
 {
     php_info_print_table_start();
     php_info_print_table_row(2, "francotone functions", "enabled");
-    php_info_print_table_row(2, "Version", "$Id: francotone-php.c 4192 2006-08-01 17:08:15Z j $");    
+    php_info_print_table_row(2, "Version", "$Id$");
     php_info_print_table_end();
 }
 

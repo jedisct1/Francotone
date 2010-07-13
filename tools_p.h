@@ -1,4 +1,4 @@
-/* $Id: tools_p.h 4176 2006-08-01 14:40:13Z j $ */
+/* $Id$ */
 #ifndef __TOOLS_P_H__
 #define __TOOLS_P_H__ 1
 

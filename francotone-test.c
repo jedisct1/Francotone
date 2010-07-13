@@ -1,4 +1,4 @@
-/* $Id: francotone-test.c 4184 2006-08-01 15:40:10Z j $ */
+/* $Id$ */
 #define DEFINE_GLOBALS 1
 #ifdef HAVE_CONFIG_H
 # include <config.h>

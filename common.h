@@ -1,4 +1,4 @@
-/* $Id: common.h 4180 2006-08-01 15:26:53Z j $ */
+/* $Id$ */
 #ifndef __COMMON_H__
 #define __COMMON_H__ 1
 

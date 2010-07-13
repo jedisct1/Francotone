@@ -1,4 +1,4 @@
-/* $Id: tools.c 4185 2006-08-01 15:41:47Z j $ */
+/* $Id$ */
 #ifdef HAVE_CONFIG_H
 # include <config.h>
 #endif

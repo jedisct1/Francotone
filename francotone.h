@@ -1,4 +1,4 @@
-/* $Id: francotone.h 4170 2006-08-01 13:57:41Z j $ */
+/* $Id$ */
 #ifndef __FRANCOTONE_H__
 #define __FRANCOTONE_H__ 1
 
