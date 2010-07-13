@@ -44,7 +44,7 @@ static FrancotoneRule francotone_rules[] = {
     { FRANCOTONEFUNC_PREG_EXT_REPLACE, "^[cs]([eiy])", "s$1", NULL, NULL },
     { FRANCOTONEFUNC_PREG_EXT_REPLACE, "^[gj]([eiy])", "j$1", NULL, NULL },
     { FRANCOTONEFUNC_PREG_EXT_REPLACE, "[c]+([ei])", "s$1", NULL, NULL },
-    { FRANCOTONEFUNC_REPLACE, "[i]+[l][l]+", "y", NULL, NULL },
+    { FRANCOTONEFUNC_PREG_REPLACE, "[i]+[l][l]+", "y", NULL, NULL },
     { FRANCOTONEFUNC_PREG_EXT_REPLACE, "(ai|ss|ch|nn)ent$", "$1", NULL, NULL },
     { FRANCOTONEFUNC_REPLACE, "en", "an", NULL, NULL },
     { FRANCOTONEFUNC_REPLACE, "eau", "o", NULL, NULL },
