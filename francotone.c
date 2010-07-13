@@ -98,7 +98,7 @@ static int preg_replace(char *keyword, size_t sizeof_keyword,
         FATAL();
     }
     keyword += rx_matches[0];
-    strlen_txt1 = (size_t) rx_matches[1] - rx_matches[0];
+    strlen_txt1 = (size_t) (rx_matches[1] - rx_matches[0]);
     if (strlen_txt1 > strlen_txt2) {
         shift = strlen_txt1 - strlen_txt2;
         memmove(keyword, keyword + shift,
