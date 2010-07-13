@@ -236,6 +236,7 @@ char *francotone(const char * const txt)
     char *phonetic;
     FrancotoneRule *francotone_rule = francotone_rules;
     size_t sizeof_phonetic;
+    size_t t = (size_t) 0U;
     const size_t sizeof_txt = strlen(txt) + (size_t) 1U;
     
     if (*txt == 0) {
@@ -244,6 +245,10 @@ char *francotone(const char * const txt)
     if ((sizeof_phonetic = sizeof_txt * FRANCOTONE_EXPANSION_RATIO)
         < sizeof_txt || (phonetic = malloc(sizeof_phonetic)) == NULL) {
         return NULL;
+    }
+    while (t < sizeof_txt) {
+        phonetic[t] = (char) tolower((unsigned char) txt[t]);
+        t++;
     }
     memcpy(phonetic, txt, sizeof_txt);
     while (francotone_rule->func != FRANCOTONEFUNC_END) {
