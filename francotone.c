@@ -46,6 +46,28 @@ static int francotone_rule_init_pcre(FrancotoneRule * const francotone_rule)
     return 0;
 }
 
+static void francotone_rule_free_pcre(FrancotoneRule * const francotone_rule)
+{
+    if (francotone_rule->rx_compiled != NULL) {
+        pcre_free(francotone_rule->rx_compiled);
+        francotone_rule->rx_compiled = NULL;
+    }
+    if (francotone_rule->rx_extra != NULL) {
+        pcre_free(francotone_rule->rx_extra);
+        francotone_rule->rx_extra = NULL;
+    }
+}
+
+static void francotone_rules_free(void)
+{
+    FrancotoneRule *rule = francotone_rules;
+    
+    do {
+        francotone_rule_free_pcre(rule);
+        rule++;
+    } while (rule->func != FRANCOTONEFUNC_END);
+}
+
 static int noseq_1(char *keyword, const char *chars)
 {
     char *ptr = keyword;
@@ -250,5 +272,7 @@ char *francotone(const char * const txt)
         }
         francotone_rule++;
     }
+    francotone_rules_free();
+    
     return phonetic;
 }
