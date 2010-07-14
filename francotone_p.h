@@ -36,6 +36,7 @@ static FrancotoneRule francotone_rules[] = {
     { FRANCOTONEFUNC_REPLACE, "+", "plus", NULL, NULL },
     { FRANCOTONEFUNC_FILTERCHARS, "abcdefghijklmnopqrstuvwxyz", "", NULL, NULL },
     { FRANCOTONEFUNC_REPLACE, "qu", "k", NULL, NULL },
+    { FRANCOTONEFUNC_REPLACE, "ck", "k", NULL, NULL },    
     { FRANCOTONEFUNC_REPLACE, "sce", "se", NULL, NULL },
     { FRANCOTONEFUNC_PREG_REPLACE, "(cs|ks|gs|qs|cz|kz|gz|qz)", "x", NULL, NULL },
     { FRANCOTONEFUNC_PREG_EXT_REPLACE, "[o]+[u]+([aeiouy])", "w$1", NULL, NULL },
